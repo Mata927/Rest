@@ -1,10 +1,162 @@
-.App {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+html {
+  background-color: orange;
+  background-image: linear-gradient(0deg, orange 0%, #96fcd5 100%);
+  background-repeat: no-repeat;
+  font-family:Redressed;
 }
 
-li{
-cursor: pointer;
+h1 {
+  text-align: center;
 }
-li.completed{
+.Container {
+  border: 2px solid rgba(0, 0, 0, 0.212);
+  width: 400px;
+  border-radius: 15px;
+  margin: 0 auto 15px auto;
+  padding: 20px 30px 20px 30px;
+  background-color: rgba(242, 253, 253, 0.89);
+  text-align: left;
+  font-family:Redressed;
+}
+
+.Boton,
+li,
+.Titol-TODO,
+.Item-TODO,
+.Detalls-TODO,
+.LlistaFiltrar {
+  cursor: pointer;
+}
+
+.Item-TODO {
+  background-color: aquamarine;
+  width: auto;
+  border-radius: 5px;
+  padding: 5px 10px 2px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  font-family:Redressed;
+}
+
+.Top {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+
+}
+
+.LlistaFiltrar {
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  font-family:Redressed;
+}
+
+.LlistaFiltrar option:checked {
+  font-weight: bold;
+  font-family:Redressed;
+}
+
+.Boton {
+  font-size: 25px;
+  width: max-content;
+  height: 40px;
+  font-family:Redressed;
+}
+
+.Item-TODO:hover {
+  background-color: rgb(63, 207, 159);
+  font-family:Redressed;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  margin-bottom: 10px;
+  font-family:Redressed;
+}
+
+li.completed {
   text-decoration: line-through;
+  text-decoration-thickness: 8px;
+  text-decoration-color: rgba(0, 0, 0, 0.575);
+  font-family:Redressed;
+}
+
+.FormulariAfegir-TODO {
+  margin-top: 15px;
+  border-radius: 5px;
+  padding-top: 5px;
+  background-color: rgba(182, 182, 182, 0.493);
+  font-family:Redressed;
+}
+
+.FormulariModificar-TODO {
+  margin-top: 5px;
+  margin-left: auto;
+  font-family:Redressed;
+}
+
+.Modificar-TODO {
+  margin-left: auto;
+  font-family:Redressed;
+}
+
+.Modificar-TODO,
+.Eliminar-TODO {
+  font-size: 22px;
+  align-self: right;
+  font-family:Redressed;
+}
+
+form {
+  text-align: right;
+  margin: 0 1rem 0 auto;
+  font-size: 20px;
+  font-family:Redressed;
+}
+
+input {
+  font-size: 18px;
+  margin-bottom: 5px;
+  width: auto;
+  font-family:Redressed;
+}
+
+input.BotonForm {
+  font-size: 18px;
+  font-family:Redressed;
+}
+
+.InputForm {
+  width: 280px;
+  font-family:Redressed;
+}
+
+.Titol-TODO {
+  font-size: 20px;
+  font-weight: bold;
+  font-family:Redressed;
+}
+
+.Detalls-TODO {
+  font-style: italic;
+  font-family:Redressed;
+}
+
+@font-face {
+  font-family:Redressed;
+  src: url('Redressed.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
